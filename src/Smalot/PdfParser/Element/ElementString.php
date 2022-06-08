@@ -72,8 +72,8 @@ class ElementString extends Element
             $name = substr($name, 0, (int) $cur_start_pos);
             $offset += strpos($content, '(') + $cur_start_pos + 2; // 2 for '(' and ')'
             $name = str_replace(
-                ['\\\\', '\\ ', '\\/', '\(', '\)', '\n', '\r', '\t'],
-                ['\\',   ' ',   '/',   '(',  ')',  "\n", "\r", "\t"],
+                ['\\\\', '\\ ', '\\/', '\(', '\)', '\n', '\r', '\t', '\b'],
+                ['\\',   ' ',   '/',   '(',  ')',  "\n", "\r", "\t", "\010"],
                 $name
             );
 

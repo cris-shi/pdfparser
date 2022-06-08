@@ -1,3 +1,5 @@
+Fixes text decoding error with some Chinese text;
+
 # PDF parser
 
 [![Version](https://poser.pugx.org/smalot/pdfparser/v)](//packagist.org/packages/smalot/pdfparser)

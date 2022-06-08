@@ -439,8 +439,8 @@ class Page extends PDFObject
                         //$tmpText = $currentFont->decodeHexadecimal($tmpText, false);
                     }
                     $tmpText = str_replace(
-                            ['\\\\', '\(', '\)', '\n', '\r', '\t', '\ '],
-                            ['\\', '(', ')', "\n", "\r", "\t", ' '],
+                            ['\\\\', '\(', '\)', '\n', '\r', '\t', '\f', '\b', '\ '],
+                            ['\\', '(', ')', "\n", "\r", "\t", "\f", "\010", ' '],
                             $tmpText
                     );
                     $tmpText = utf8_encode($tmpText);
@@ -458,8 +458,8 @@ class Page extends PDFObject
                     $tmpText = $data[$i]['c'];
                     $decodedText = isset($currentFont) ? $currentFont->decodeOctal($tmpText) : $tmpText;
                     $decodedText = str_replace(
-                            ['\\\\', '\(', '\)', '\n', '\r', '\t', '\ '],
-                            ['\\', '(', ')', "\n", "\r", "\t", ' '],
+                            ['\\\\', '\(', '\)', '\n', '\r', '\t', '\f', '\b', '\ '],
+                            ['\\', '(', ')', "\n", "\r", "\t", "\f", "\010", ' '],
                             $decodedText
                     );
                     $decodedText = utf8_encode($decodedText);
