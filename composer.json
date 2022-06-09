@@ -1,6 +1,6 @@
 {
-    "name": "smalot/pdfparser",
-    "description": "Pdf parser library. Can read and extract information from pdf file.",
+    "name": "cris-shi/pdfparser",
+    "description": "fork from smalot/pdfparser library. Fixes text decoding error with some Chinese text.",
     "keywords": ["PDF", "text", "parser", "parse", "extract"],
     "type": "library",
     "license": "LGPL-3.0",
